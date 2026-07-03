@@ -1,0 +1,24 @@
+        // Display the result of the math operation
+        Console.WriteLine("Result of first number multiplied by 2: " + result);
+
+        // Display the second integer to the screen
+        Console.WriteLine("Second number: " + secondNumber);
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Instantiate the MathOperations class
+        MathOperations mathObject = new MathOperations();
+
+        // Call the method and pass in two numbers
+        mathObject.PerformOperation(10, 20);
+
+        // Call the method again, specifying the parameters by name
+        mathObject.PerformOperation(firstNumber: 15, secondNumber: 30);
+
+        // Pause the program so the console window remains open
+        Console.ReadLine();
+    }
